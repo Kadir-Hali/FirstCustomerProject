@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtCategoryId = new System.Windows.Forms.TextBox();
-            this.txtCategoryName = new System.Windows.Forms.TextBox();
+            this.txtDepartmentId = new System.Windows.Forms.TextBox();
+            this.txtDepartmentName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.rdbActive = new System.Windows.Forms.RadioButton();
@@ -48,10 +48,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnCategoryList = new System.Windows.Forms.Button();
-            this.btnCategoryDelete = new System.Windows.Forms.Button();
-            this.btnCategoryUpdate = new System.Windows.Forms.Button();
-            this.btnCategorySave = new System.Windows.Forms.Button();
+            this.btnDepartmentList = new System.Windows.Forms.Button();
+            this.btnCDepartmentDelete = new System.Windows.Forms.Button();
+            this.btnDepartmentUpdate = new System.Windows.Forms.Button();
+            this.btnDepartmentSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -62,54 +62,54 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(90, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 25);
+            this.label1.Size = new System.Drawing.Size(125, 22);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Kategori ID:";
+            this.label1.Text = "Departman ID:";
             // 
-            // txtCategoryId
+            // txtDepartmentId
             // 
-            this.txtCategoryId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCategoryId.Location = new System.Drawing.Point(211, 45);
-            this.txtCategoryId.Name = "txtCategoryId";
-            this.txtCategoryId.Size = new System.Drawing.Size(182, 30);
-            this.txtCategoryId.TabIndex = 1;
+            this.txtDepartmentId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtDepartmentId.Location = new System.Drawing.Point(233, 45);
+            this.txtDepartmentId.Name = "txtDepartmentId";
+            this.txtDepartmentId.Size = new System.Drawing.Size(182, 30);
+            this.txtDepartmentId.TabIndex = 1;
             // 
-            // txtCategoryName
+            // txtDepartmentName
             // 
-            this.txtCategoryName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCategoryName.Location = new System.Drawing.Point(211, 81);
-            this.txtCategoryName.Name = "txtCategoryName";
-            this.txtCategoryName.Size = new System.Drawing.Size(182, 30);
-            this.txtCategoryName.TabIndex = 3;
+            this.txtDepartmentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtDepartmentName.Location = new System.Drawing.Point(233, 81);
+            this.txtDepartmentName.Name = "txtDepartmentName";
+            this.txtDepartmentName.Size = new System.Drawing.Size(182, 30);
+            this.txtDepartmentName.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(80, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 25);
+            this.label2.Size = new System.Drawing.Size(134, 22);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Kategori Adı:";
+            this.label2.Text = "Departman Adı:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(40, 115);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 25);
+            this.label3.Size = new System.Drawing.Size(171, 22);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Kategori Durumu:";
+            this.label3.Text = "Departman Durumu:";
             // 
             // rdbActive
             // 
             this.rdbActive.AutoSize = true;
             this.rdbActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rdbActive.Location = new System.Drawing.Point(211, 113);
+            this.rdbActive.Location = new System.Drawing.Point(233, 113);
             this.rdbActive.Name = "rdbActive";
             this.rdbActive.Size = new System.Drawing.Size(71, 29);
             this.rdbActive.TabIndex = 5;
@@ -121,7 +121,7 @@
             // 
             this.rdbPassive.AutoSize = true;
             this.rdbPassive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rdbPassive.Location = new System.Drawing.Point(288, 113);
+            this.rdbPassive.Location = new System.Drawing.Point(310, 113);
             this.rdbPassive.Name = "rdbPassive";
             this.rdbPassive.Size = new System.Drawing.Size(76, 29);
             this.rdbPassive.TabIndex = 6;
@@ -259,56 +259,59 @@
             this.label10.TabIndex = 12;
             this.label10.Text = "A Harfli Kategori";
             // 
-            // btnCategoryList
+            // btnDepartmentList
             // 
-            this.btnCategoryList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCategoryList.Location = new System.Drawing.Point(447, 292);
-            this.btnCategoryList.Name = "btnCategoryList";
-            this.btnCategoryList.Size = new System.Drawing.Size(373, 35);
-            this.btnCategoryList.TabIndex = 11;
-            this.btnCategoryList.Text = "Verileri Listele";
-            this.btnCategoryList.UseVisualStyleBackColor = true;
-            this.btnCategoryList.Click += new System.EventHandler(this.btnCategoryList_Click);
+            this.btnDepartmentList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDepartmentList.Location = new System.Drawing.Point(447, 292);
+            this.btnDepartmentList.Name = "btnDepartmentList";
+            this.btnDepartmentList.Size = new System.Drawing.Size(373, 35);
+            this.btnDepartmentList.TabIndex = 11;
+            this.btnDepartmentList.Text = "Verileri Listele";
+            this.btnDepartmentList.UseVisualStyleBackColor = true;
+            this.btnDepartmentList.Click += new System.EventHandler(this.btnDepartmentList_Click);
             // 
-            // btnCategoryDelete
+            // btnCDepartmentDelete
             // 
-            this.btnCategoryDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCategoryDelete.Location = new System.Drawing.Point(447, 333);
-            this.btnCategoryDelete.Name = "btnCategoryDelete";
-            this.btnCategoryDelete.Size = new System.Drawing.Size(373, 35);
-            this.btnCategoryDelete.TabIndex = 12;
-            this.btnCategoryDelete.Text = "Verileri Sil";
-            this.btnCategoryDelete.UseVisualStyleBackColor = true;
+            this.btnCDepartmentDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCDepartmentDelete.Location = new System.Drawing.Point(447, 333);
+            this.btnCDepartmentDelete.Name = "btnCDepartmentDelete";
+            this.btnCDepartmentDelete.Size = new System.Drawing.Size(373, 35);
+            this.btnCDepartmentDelete.TabIndex = 12;
+            this.btnCDepartmentDelete.Text = "Verileri Sil";
+            this.btnCDepartmentDelete.UseVisualStyleBackColor = true;
+            this.btnCDepartmentDelete.Click += new System.EventHandler(this.btnCDepartmentDelete_Click);
             // 
-            // btnCategoryUpdate
+            // btnDepartmentUpdate
             // 
-            this.btnCategoryUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCategoryUpdate.Location = new System.Drawing.Point(447, 374);
-            this.btnCategoryUpdate.Name = "btnCategoryUpdate";
-            this.btnCategoryUpdate.Size = new System.Drawing.Size(373, 35);
-            this.btnCategoryUpdate.TabIndex = 13;
-            this.btnCategoryUpdate.Text = "Verileri Güncelle";
-            this.btnCategoryUpdate.UseVisualStyleBackColor = true;
+            this.btnDepartmentUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDepartmentUpdate.Location = new System.Drawing.Point(447, 374);
+            this.btnDepartmentUpdate.Name = "btnDepartmentUpdate";
+            this.btnDepartmentUpdate.Size = new System.Drawing.Size(373, 35);
+            this.btnDepartmentUpdate.TabIndex = 13;
+            this.btnDepartmentUpdate.Text = "Verileri Güncelle";
+            this.btnDepartmentUpdate.UseVisualStyleBackColor = true;
+            this.btnDepartmentUpdate.Click += new System.EventHandler(this.btnDepartmentUpdate_Click);
             // 
-            // btnCategorySave
+            // btnDepartmentSave
             // 
-            this.btnCategorySave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCategorySave.Location = new System.Drawing.Point(447, 418);
-            this.btnCategorySave.Name = "btnCategorySave";
-            this.btnCategorySave.Size = new System.Drawing.Size(373, 35);
-            this.btnCategorySave.TabIndex = 14;
-            this.btnCategorySave.Text = "Veri Ekle";
-            this.btnCategorySave.UseVisualStyleBackColor = true;
+            this.btnDepartmentSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDepartmentSave.Location = new System.Drawing.Point(447, 418);
+            this.btnDepartmentSave.Name = "btnDepartmentSave";
+            this.btnDepartmentSave.Size = new System.Drawing.Size(373, 35);
+            this.btnDepartmentSave.TabIndex = 14;
+            this.btnDepartmentSave.Text = "Veri Ekle";
+            this.btnDepartmentSave.UseVisualStyleBackColor = true;
+            this.btnDepartmentSave.Click += new System.EventHandler(this.btnDepartmentSave_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 474);
-            this.Controls.Add(this.btnCategorySave);
-            this.Controls.Add(this.btnCategoryUpdate);
-            this.Controls.Add(this.btnCategoryDelete);
-            this.Controls.Add(this.btnCategoryList);
+            this.Controls.Add(this.btnDepartmentSave);
+            this.Controls.Add(this.btnDepartmentUpdate);
+            this.Controls.Add(this.btnCDepartmentDelete);
+            this.Controls.Add(this.btnDepartmentList);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -317,12 +320,13 @@
             this.Controls.Add(this.rdbPassive);
             this.Controls.Add(this.rdbActive);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtCategoryName);
+            this.Controls.Add(this.txtDepartmentName);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtCategoryId);
+            this.Controls.Add(this.txtDepartmentId);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -340,8 +344,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtCategoryId;
-        private System.Windows.Forms.TextBox txtCategoryName;
+        private System.Windows.Forms.TextBox txtDepartmentId;
+        private System.Windows.Forms.TextBox txtDepartmentName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton rdbActive;
@@ -359,10 +363,10 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btnCategoryList;
-        private System.Windows.Forms.Button btnCategoryDelete;
-        private System.Windows.Forms.Button btnCategoryUpdate;
-        private System.Windows.Forms.Button btnCategorySave;
+        private System.Windows.Forms.Button btnDepartmentList;
+        private System.Windows.Forms.Button btnCDepartmentDelete;
+        private System.Windows.Forms.Button btnDepartmentUpdate;
+        private System.Windows.Forms.Button btnDepartmentSave;
     }
 }
 
