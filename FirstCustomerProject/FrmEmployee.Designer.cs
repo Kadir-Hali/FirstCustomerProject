@@ -34,7 +34,6 @@
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
             this.txtSalary = new System.Windows.Forms.TextBox();
-            this.txtDepartment = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Name = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,7 +45,9 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.numDepartmentID = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDepartmentID)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -62,7 +63,7 @@
             // txtID
             // 
             this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtID.Location = new System.Drawing.Point(133, 308);
+            this.txtID.Location = new System.Drawing.Point(153, 308);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(148, 27);
             this.txtID.TabIndex = 1;
@@ -70,7 +71,7 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtName.Location = new System.Drawing.Point(133, 350);
+            this.txtName.Location = new System.Drawing.Point(153, 350);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(148, 27);
             this.txtName.TabIndex = 2;
@@ -78,7 +79,7 @@
             // txtSurname
             // 
             this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSurname.Location = new System.Drawing.Point(133, 395);
+            this.txtSurname.Location = new System.Drawing.Point(153, 395);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(148, 27);
             this.txtSurname.TabIndex = 3;
@@ -86,7 +87,7 @@
             // txtCity
             // 
             this.txtCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCity.Location = new System.Drawing.Point(133, 443);
+            this.txtCity.Location = new System.Drawing.Point(153, 443);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(148, 27);
             this.txtCity.TabIndex = 4;
@@ -94,24 +95,16 @@
             // txtSalary
             // 
             this.txtSalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSalary.Location = new System.Drawing.Point(133, 488);
+            this.txtSalary.Location = new System.Drawing.Point(153, 488);
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.Size = new System.Drawing.Size(148, 27);
             this.txtSalary.TabIndex = 5;
-            // 
-            // txtDepartment
-            // 
-            this.txtDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtDepartment.Location = new System.Drawing.Point(133, 532);
-            this.txtDepartment.Name = "txtDepartment";
-            this.txtDepartment.Size = new System.Drawing.Size(148, 27);
-            this.txtDepartment.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(85, 310);
+            this.label1.Location = new System.Drawing.Point(105, 310);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 25);
             this.label1.TabIndex = 8;
@@ -121,7 +114,7 @@
             // 
             this.Name.AutoSize = true;
             this.Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Name.Location = new System.Drawing.Point(52, 352);
+            this.Name.Location = new System.Drawing.Point(72, 352);
             this.Name.Name = "Name";
             this.Name.Size = new System.Drawing.Size(75, 25);
             this.Name.TabIndex = 9;
@@ -131,7 +124,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(24, 395);
+            this.label3.Location = new System.Drawing.Point(44, 395);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 25);
             this.label3.TabIndex = 10;
@@ -141,7 +134,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(70, 442);
+            this.label4.Location = new System.Drawing.Point(90, 442);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 25);
             this.label4.TabIndex = 11;
@@ -151,7 +144,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(48, 490);
+            this.label5.Location = new System.Drawing.Point(68, 490);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 25);
             this.label5.TabIndex = 12;
@@ -163,9 +156,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.Location = new System.Drawing.Point(3, 532);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 25);
+            this.label6.Size = new System.Drawing.Size(148, 25);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Department :";
+            this.label6.Text = "Department ID :";
             // 
             // label2
             // 
@@ -195,6 +188,7 @@
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -214,11 +208,20 @@
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
+            // numDepartmentID
+            // 
+            this.numDepartmentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.numDepartmentID.Location = new System.Drawing.Point(153, 532);
+            this.numDepartmentID.Name = "numDepartmentID";
+            this.numDepartmentID.Size = new System.Drawing.Size(148, 30);
+            this.numDepartmentID.TabIndex = 19;
+            // 
             // FrmEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 580);
+            this.Controls.Add(this.numDepartmentID);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
@@ -230,7 +233,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Name);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtDepartment);
             this.Controls.Add(this.txtSalary);
             this.Controls.Add(this.txtCity);
             this.Controls.Add(this.txtSurname);
@@ -240,6 +242,7 @@
             
             this.Text = "FrmEmployee";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDepartmentID)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,7 +256,6 @@
         private System.Windows.Forms.TextBox txtSurname;
         private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.TextBox txtSalary;
-        private System.Windows.Forms.TextBox txtDepartment;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Name;
         private System.Windows.Forms.Label label3;
@@ -265,5 +267,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.NumericUpDown numDepartmentID;
     }
 }
