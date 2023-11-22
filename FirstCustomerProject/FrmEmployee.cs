@@ -21,7 +21,7 @@ namespace FirstCustomerProject
         private SqlConnection connection = new SqlConnection("Server=DESKTOP-G3NGAQA; initial catalog = MyDbCustomer; integrated Security = true");
         private void btnList_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("select Name,Surname,City,Salary,DepartmentName from TblEmployee inner join TblDepartment on TblEmployee.DepartmentID = TblDepartment.DepartmentID ", connection);
+            SqlCommand cmd = new SqlCommand("select EmployeeId,Name,Surname,City,Salary,DepartmentName from TblEmployee inner join TblDepartment on TblEmployee.DepartmentID = TblDepartment.DepartmentID ", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
@@ -51,6 +51,27 @@ namespace FirstCustomerProject
                 MessageBox.Show("Geçerli olan bir departman ID'si giriniz.","Uyarı",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
 
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            SqlCommand command = new SqlCommand("update TblEmployee Set DepartmentID = @p1 where EmployeeID = @p2",connection);
+            command.Parameters.AddWithValue("@p1", numDepartmentID.Value);
+            command.Parameters.AddWithValue("@p2", txtID.Text);
+            command.ExecuteNonQuery();
+            MessageBox.Show("Çalışan başarıyla güncellendi.","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            connection.Close();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            SqlCommand command = new SqlCommand("Delete TblEmployee WHERE EmployeeId = @p1",connection);
+            command.Parameters.AddWithValue("@p1", txtID.Text);
+            command.ExecuteNonQuery();
+            MessageBox.Show("Çalışan başarıyla silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            connection.Close();
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace FirstCustomerProject
+﻿using System.Windows.Forms;
+
+namespace FirstCustomerProject
 {
     partial class FrmEmployee
     {
@@ -198,6 +200,7 @@
             this.btnUpdate.TabIndex = 17;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -207,6 +210,7 @@
             this.btnDelete.TabIndex = 18;
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // numDepartmentID
             // 
@@ -239,7 +243,7 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.dataGridView1);
-            
+            //this.Name = "FrmEmployee";
             this.Text = "FrmEmployee";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDepartmentID)).EndInit();
@@ -257,7 +261,7 @@
         private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.TextBox txtSalary;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label Name;
+        private Control Name;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
